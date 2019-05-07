@@ -21,11 +21,11 @@ class About extends React.Component {
                 float: 'left',
                 margin: '10px'
               }}
-            />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. Degree in Art History plus experience in historic preservation and customer service under her belt, she finally made the plunge into professional development by means of the Grace Hopper program in Software Engineering. Since graduating the intensive program in 2018, she has worked as part of a global development team for Kuvio Creative. She is passionate about ongoing learning and accessibility.</p>
+            />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. Degree in Art History plus experience in historic preservation and customer service under her belt, she finally made the plunge into professional development by means of the <a href="https://www.gracehopper.com/">Grace Hopper</a> program in Software Engineering. Since graduating the intensive program in 2018, she has worked as part of a global development team for <a href="https://kuv.io/">Kuvio Creative</a>. She is passionate about ongoing learning and accessibility.</p>
 
       <p style={{
         textAlign: 'justify'
-      }}>When not juggling tabs in Visual Studio, she can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</p>
+      }}>When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</p>
 
   
       <div style={{
@@ -82,12 +82,6 @@ class About extends React.Component {
             ` }}
           />
         </div>
-
-      {/* <p>currently...</p>
-      <p><span className="th th-music"></span> love + fear - marina</p>
-      <p><span className="th th-tv"></span> game of thrones</p>
-      <p><span className="th th-notebook"></span> wonder woman: warbringer</p>
-      <p><span className="th th-plumbob"></span> stardew valley & skyrim</p> */}
       </Layout>
     )
   }
