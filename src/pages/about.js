@@ -53,7 +53,7 @@ class About extends React.Component {
       <div  
             //id="___gatsby"
             dangerouslySetInnerHTML={{ __html: `
-            <div id="gr_challenge_8863" style="border: 2px solid #9278a9; border-radius:10px; padding: 0px 7px 0px 7px; min-height: 100px">
+            <div id="gr_challenge_8863" style="border: 0px solid #9278a9; border-radius:10px; padding: 0px 7px 0px 7px; min-height: 100px">
               <div id="gr_challenge_progress_body_8863" style="font-size: 12px; font-family: georgia,serif;line-height: 18px">
                 <h5 style="margin: 4px 0 10px; font-weight: normal; text-align: center">
                   <a style="text-decoration: none; font-family:georgia,serif;font-style:italic; font-size: 1.1em" rel="nofollow" href="https://www.goodreads.com/challenges/8863-2019-reading-challenge">2019 Reading Challenge</a>

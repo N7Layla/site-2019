@@ -5,7 +5,12 @@ Wordpress2016.overrideThemeStyles = () => {
   return {
     "body": {
       fontFamily: `'Roboto', serif`,
-      letterSpacing: '1px'
+      letterSpacing: '1px',
+      //backgroundColor: '#eadbf6',
+      // background: '#654ea3;',
+      // background: '-webkit-linear-gradient(to left, #dae2f8, #d6a4a4)',
+      // background: 'linear-gradient(to left, #dae2f8, #d6a4a4)',
+      // backgroundSize: 'cover'
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,

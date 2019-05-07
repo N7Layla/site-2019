@@ -130,7 +130,7 @@ class Layout extends React.Component {
         <footer style={{
           fontSize: '12px'
         }}>
-          ©laylawrote {new Date().getFullYear()}, {`built with `} <a href="https://www.gatsbyjs.org">gatsby</a>
+          ©{new Date().getFullYear()}, {`built by layla with `} <a href="https://www.gatsbyjs.org">gatsby</a>
         </footer>
       </div>
     )
