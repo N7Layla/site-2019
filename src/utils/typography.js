@@ -3,9 +3,41 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "body": {
+      fontFamily: `'Roboto', serif`,
+      letterSpacing: '1px'
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "a": {
+      boxShadow: 'none',
+      color: '#000000'
+    },
+    ".th": {
+      backgroundColor: 'white', 
+      borderRadius: '100px', 
+      color: '#9278a9',
+      fontSize: '35px',
+      margin: '4px'
+    },
+    "input, textarea": {
+      width: '100%',
+      backgroundColor: 'white',
+      boxShadow: '0',
+      border: '0',
+      borderBottom: '1px solid #9278a9',
+      margin: '2px'
+    },
+    "button": {
+      backgroundColor: 'white',
+      border: '1px solid #9278a9',
+      boxShadow: '0'
+    },
+    "contact-form": {
+      display: 'flex',
+      flexDirection: 'column'
+    }
   }
 }
 

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class Blog extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -18,8 +18,8 @@ class BlogIndex extends React.Component {
           title="blog home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio /> 
-        {posts.slice(0,2).map(({ node }) => {
+        {/* <Bio /> */}
+        {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -46,7 +46,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Blog
 
 export const pageQuery = graphql`
   query {

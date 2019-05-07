@@ -9,6 +9,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
+
 import { rhythm } from "../utils/typography"
 
 function Bio() {
@@ -20,8 +21,10 @@ function Bio() {
         return (
           <div
             style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
+              display: 'flex',
+              alignItems: 'center',
+              paddingBottom: '10px',
+              //marginBottom: rhythm(2.5),
             }}
           >
             <Image
@@ -37,14 +40,17 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
-            </p>
+            <div style={{
+             margin: '0',
+             lineHeight: '1em',
+             fontSize: '1.2em',
+             fontStyle: 'italic',
+             fontWeight: 'bold'
+            }}>
+              Developer & pop culture enthusiast. <a href="https://twitter.com/laylawrote"><span aria-label="Twitter" className="th th-twitter-o" style={{
+                fontSize: '13px'
+              }}></span></a>
+            </div>
           </div>
         )
       }}
@@ -54,7 +60,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/laylas.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed

@@ -1,21 +1,11 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+title: New site, new blog.
+date: "2019-05-06"
+description: "Check it out, I'm a blog post on a static site, thanks to GatsbyJS!"
 ---
 
-This is my first post on my new fake blog! How exciting!
+Check it out, I'm a blog post on a static site, thanks to GatsbyJS! Neat! Lately I've found I miss blogging in some form, so here's to the start of this new site where I can share lists, game reviews or new things on the development front I'm excited about! 
 
-I'm sure I'll write a lot more interesting things in the future.
+Have this great Captain Marvel image to get us started.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
-
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
-
-![Chinese Salty Egg](./salty_egg.jpg)
+![Captain Marvel](./marvel.jpg)
