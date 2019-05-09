@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `layla wrote`,
     author: `Layla`,
-    description: `Beautiful blogfolio.`,
+    description: `Layla Wrote is a personal blogging and portfolio site featuring posts ranging from game reviews to code tutorials.`,
     siteUrl: `http://laylawrote.com`,
     social: {
       twitter: `laylawrote`,
@@ -58,12 +58,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `<laylawrote/>`,
-        short_name: `GatsbyJS`,
+        short_name: `laylawrote`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/Logos-Google-Code-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

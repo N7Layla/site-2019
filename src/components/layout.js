@@ -11,21 +11,10 @@ class Layout extends React.Component {
     //const rootPath = `${__PATH_PREFIX__}/`
     let header;
     let title = "<laylawrote/>"
-    
 
     //if (location.pathname === rootPath) {
       header = (
         <div>
-        {/* <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-            fontFamily: 'VT323'
-          }}
-        > */}
-
-        {/* </h1> */}
                 <h4
                 style={{
                   fontFamily: `'Staatliches', serif`,

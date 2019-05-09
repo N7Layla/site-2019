@@ -42,7 +42,7 @@ Wordpress2016.overrideThemeStyles = () => {
     "contact-form": {
       display: 'flex',
       flexDirection: 'column'
-    }
+    },
   }
 }
 
