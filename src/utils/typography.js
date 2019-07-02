@@ -12,6 +12,12 @@ Wordpress2016.overrideThemeStyles = () => {
       // background: 'linear-gradient(to left, #dae2f8, #d6a4a4)',
       // backgroundSize: 'cover'
     },
+    "main": {
+      marginTop: '2rem',
+    },
+    "h1, h2, h3, h4, h5, h6": {
+      marginTop: '2rem',
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },

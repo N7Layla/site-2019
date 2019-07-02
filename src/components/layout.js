@@ -1,5 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Image from "gatsby-image"
+
+import Header from './header';
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -9,36 +12,39 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props
     //const rootPath = `${__PATH_PREFIX__}/`
+    
+
     let header;
-    let title = "<laylawrote/>"
+    let title = "laylawrote"
+    
+    
 
     //if (location.pathname === rootPath) {
       header = (
-        <div>
+        <div style={{
+          height: '320px'
+        }}>
+          <div style={{
+            height: '300px',
+            width: '100%',
+            backgroundImage: 'url("desk_commission.gif")',
+            backgroundPosition: 'center center',
+            backgroundSize: 'cover'
+          }}
+        ></div>
                 <h4
                 style={{
                   fontFamily: `'Staatliches', serif`,
                   display: 'flex',
                   flexWrap: 'wrap',
                   alignItems: 'center',
+                  marginTop: '1rem',
                   //background: '#654ea3',  /* fallback for old browsers */
                   //background: '-webkit-linear-gradient(to left, #eaafc8, #654ea3)',
                   //background: 'linear-gradient(to left, #eaafc8, #654ea3)'
 
                 }}>
-                          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-              fontSize: '40px',
-              padding: '10px',
-              width: '100%'
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          
           <div>
           <Link
                 style={{
@@ -112,18 +118,20 @@ class Layout extends React.Component {
     </Helmet>
         <header>{header}</header>
         <main>{children}</main>
-        <hr style={{
+        {/* <hr style={{
           width: '40%',
           borderTop: '1px solid #9278a9'
-        }} />
-        <footer style={{
+        }} /> */}
+        {/* <footer style={{
           fontSize: '12px'
         }}>
           ©{new Date().getFullYear()}, {`built by layla with `} <a href="https://www.gatsbyjs.org">gatsby</a>
-        </footer>
+        </footer> */}
       </div>
     )
   }
 }
+
+
 
 export default Layout
