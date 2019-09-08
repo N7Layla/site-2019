@@ -1,8 +1,12 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
+import rainbow from "../../content/assets/rainbow.png"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "*": {
+      maxWidth: '100%',
+    },
     "body": {
       fontFamily: `'Roboto', serif`,
       letterSpacing: '1px',
@@ -10,13 +14,32 @@ Wordpress2016.overrideThemeStyles = () => {
       // background: '#654ea3;',
       // background: '-webkit-linear-gradient(to left, #dae2f8, #d6a4a4)',
       // background: 'linear-gradient(to left, #dae2f8, #d6a4a4)',
-      // backgroundSize: 'cover'
+      // backgroundSize: 'cover',
+      width: '100%',
+    },
+    ".content": {
+      maxWidth: '100vw',
     },
     "main": {
-      marginTop: '2rem',
+      //marginTop: '1rem',
+      width: '100%',
+    },
+    "header a": {
+      backgroundPosition: 'center center',
+    },
+    "header a:hover": {
+      backgroundColor: 'transparent',
+      backgroundImage: 'url(' + rainbow + ')',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'bottom center',
+      backgroundOpacity: 0.3,
+      webkitTransition: '1s ease-in-out',
+      transition: '1s ease-in-out'
     },
     "h1, h2, h3, h4, h5, h6": {
-      marginTop: '2rem',
+      //marginTop: '2rem',
+      marginTop: '0',
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -49,6 +72,14 @@ Wordpress2016.overrideThemeStyles = () => {
       display: 'flex',
       flexDirection: 'column'
     },
+    "@media only screen and (max-width: 600px)": {
+      ".content": {
+        flexWrap: 'wrap-reverse'
+      },
+      "main": {
+        width: '100%'
+      }
+    }
   }
 }
 

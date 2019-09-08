@@ -18,8 +18,13 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <div style={{
+            padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
+            margin: `${rhythm(2 /4)}`,
+        }}>
         <h1 style={{
-          fontFamily: 'Roboto'
+          fontFamily: 'Roboto',
+          marginTop: '20px',
         }}>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -31,13 +36,16 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div style={{
+          textAlign: 'justify',
+        }}
+        dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        {/* <Bio /> */}
 
         <ul
           style={{
@@ -63,6 +71,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        </div>
       </Layout>
     )
   }

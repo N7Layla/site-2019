@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
 class About extends React.Component {
   render() {
@@ -13,7 +14,11 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="about" />
-        <p style={{textAlign: 'justify'}}>            <Image
+        <p style={{
+          textAlign: 'justify',
+            padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
+            margin: `${rhythm(2 /4)}`,
+        }}>            <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt="Portrait"
               style={{
@@ -23,14 +28,17 @@ class About extends React.Component {
               }}
             />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. Degree in Art History plus experience in historic preservation and customer service under her belt, she finally made the plunge into professional development by means of the <a href="https://www.gracehopper.com/">Grace Hopper</a> program in Software Engineering. Since graduating the intensive program in 2018, she has worked as part of a global development team for <a href="https://kuv.io/">Kuvio Creative</a>. She is passionate about ongoing learning and accessibility.</p>
 
-      <p style={{
-        textAlign: 'justify'
-      }}>When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</p>
+        <p style={{
+          textAlign: 'justify',
+            padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
+            margin: `${rhythm(2 /4)}`,
+        }}>  When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</p>
 
   
       <div style={{
         display: 'flex',
-        justifyContent: 'space-around'
+        justifyContent: 'center',
+        width: '100%'
       }}>
       <div><a href="https://twitter.com/laylawrote"><span aria-label="Twitter" className="th th-twitter"></span></a></div> 
       <div><a href="https://github.com/N7Layla"><span aria-label="Github" className="th th-github"></span></a> </div>

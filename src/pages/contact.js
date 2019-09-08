@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
 class Contact extends React.Component {
   render() {
@@ -12,6 +13,10 @@ class Contact extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="contact" />
+        <div style={{
+            padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
+            margin: `${rhythm(2 /4)}`,
+        }}>
         <p>Wanna get in touch?</p>
 
         <form id="contact-form" action="https://formspree.io/laylawrote@gmail.com" method="POST">
@@ -20,6 +25,7 @@ class Contact extends React.Component {
         <textarea aria-label="Message" type="text" name="message" placeholder="Message"></textarea>
         <button type="submit">Submit</button>
         </form>
+        </div>
       </Layout>
     )
   }
