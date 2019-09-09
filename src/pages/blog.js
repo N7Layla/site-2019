@@ -43,10 +43,17 @@ class Blog extends React.Component {
                 </Link>
               </h3>
               <div style={{
-          background: '#9278a9',
+          background: '#d3cce3', 
+          background: '-webkit-linear-gradient(to left, #d3cce3, #e9e4f0)',  
+          background: 'linear-gradient(to left, #d3cce3, #e9e4f0)',  
           padding: '5px'
         }}>
-              <small>{node.frontmatter.date}</small>
+              <div style={{
+                width: '100%',
+                textAlign: 'right',
+                fontSize: '10px',
+                textTransform: 'uppercase',
+              }}>{node.frontmatter.date}</div>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,

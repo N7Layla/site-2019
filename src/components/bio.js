@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import bannerGIF from '../../static/desk_commission.gif';
@@ -36,7 +36,7 @@ function Bio() {
               //marginBottom: rhythm(2.5),
             }}
           >
-          <img src={bannerGIF} alt="laylawrote" />
+          <Link to={'/'}><img src={bannerGIF} alt="<laylawrote/>" /></Link>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -68,17 +68,11 @@ function Bio() {
         justifyContent: 'center',
         width: '100%'
       }}>
-      <div><a href="https://twitter.com/laylawrote"><span aria-label="Twitter" className="th th-twitter"></span></a></div> 
-      <div><a href="https://github.com/N7Layla"><span aria-label="Github" className="th th-github"></span></a> </div>
-      <div><a href="https://www.goodreads.com/user/show/10094110-layla"><span aria-label="Goodreads" className="th th-goodreads" style={{
-                backgroundColor: '#9278a9',
-                color: 'white'
-              }}></span></a> </div>
-              <div><a href="https://letterboxd.com/vod/"><span aria-label="Letterboxd" className="th th-letterboxd" style={{
-                backgroundColor: '#9278a9',
-                color: 'white'
-              }}></span></a></div>
-              <div><a href="https://ko-fi.com/laylawrote"><span aria-label="Ko-Fi" className="th th-ko-fi"></span></a></div></div>
+      <a aria-label="twitter" href="https://twitter.com/laylawrote"><i className="fab fa-twitter fa-fw"></i></a>
+      <a aria-label="github" href="https://github.com/N7Layla"><i className="fab fa-github fa-fw"></i></a> 
+      <a aria-label="goodreads" href="https://www.goodreads.com/user/show/10094110-layla"><i className="fab fa-goodreads fa-fw"></i></a> 
+              <a aria-label="letterbod" href="https://letterboxd.com/vod/"><i className="fas fa-film fa-fw"></i></a>
+              <a aria-label="ko-fi" href="https://ko-fi.com/laylawrote"><i className="fas fa-coffee fa-fw"></i></a></div>
           </div>
           </div>
         )

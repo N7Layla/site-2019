@@ -59,7 +59,7 @@ class Layout extends React.Component {
               display: 'flex',
               justifyContent: 'space-around',
               alignItems: 'center',
-              borderBottom: '1px solid #eba9ef',
+              borderBottom: '1px solid #b79ed9',
               position: 'fixed',
               top: '0',
               width: '100%',
@@ -141,7 +141,7 @@ class Layout extends React.Component {
         }}
       >
     <Helmet>
-      <link href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet"></link>
+    <script src="https://kit.fontawesome.com/7ada84c29d.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto|Srisakdi|Staatliches" rel="stylesheet"></link>
     </Helmet>
         <header>{header}</header>

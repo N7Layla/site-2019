@@ -25,17 +25,20 @@ Wordpress2016.overrideThemeStyles = () => {
       width: '100%',
     },
     "header a": {
-      backgroundPosition: 'center center',
+      //backgroundPosition: 'center center',
+      webkitTransition: '1s ease-in-out',
+      transition: '1s ease-in-out',
     },
     "header a:hover": {
-      backgroundColor: 'transparent',
-      backgroundImage: 'url(' + rainbow + ')',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'bottom center',
-      backgroundOpacity: 0.3,
+      // backgroundColor: 'transparent',
+      // backgroundImage: 'url(' + rainbow + ')',
+      // backgroundSize: 'cover',
+      // backgroundRepeat: 'no-repeat',
+      // backgroundPosition: 'bottom center',
+      // backgroundOpacity: 0.3,
       webkitTransition: '1s ease-in-out',
-      transition: '1s ease-in-out'
+      transition: '1s ease-in-out',
+      letterSpacing: '1rem',
     },
     "h1, h2, h3, h4, h5, h6": {
       //marginTop: '2rem',
@@ -71,6 +74,24 @@ Wordpress2016.overrideThemeStyles = () => {
     "contact-form": {
       display: 'flex',
       flexDirection: 'column'
+    },
+    ".fas, .fab": {
+      padding: '20px',
+      boxSizing: 'content-box',
+      fontSize: '25px',
+      webkitTransition: '1s ease-in-out',
+      transition: '0.5s ease-in-out'
+    },
+    ".fas:hover, .fab:hover": {
+      color: '#9278a9',
+      webkitTransition: '1s ease-in-out',
+      transition: '0.5s ease-in-out'
+    },
+    "h3 .fas, h3 .fab, li .fas": {
+      padding: '0'
+    },
+    "li": {
+      margin: '10px'
     },
     "@media only screen and (max-width: 600px)": {
       ".content": {

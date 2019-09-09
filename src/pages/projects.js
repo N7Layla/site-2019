@@ -17,6 +17,23 @@ class Projects extends React.Component {
             padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
             margin: `${rhythm(2 /4)}`,
         }}>
+                <div style={{
+                  marginBottom: '20px'
+                }}>
+        <h3 style={{
+          borderBottom: '2px solid #9278a9',
+          marginBottom: '0',
+          padding: '5px'
+        }}>flix sorter (link soon)</h3>
+                <div style={{
+          background: '#d3cce3', 
+          background: '-webkit-linear-gradient(to left, #d3cce3, #e9e4f0)',  
+          background: 'linear-gradient(to left, #d3cce3, #e9e4f0)', 
+          padding: '5px'
+        }}>
+        an angular webapp for the simple purpose of filtering and sorting a netflix list.
+        </div>
+        </div>
         <div style={{
           marginBottom: '20px'
         }}>
@@ -24,9 +41,11 @@ class Projects extends React.Component {
           borderBottom: '2px solid #9278a9',
           marginBottom: '0',
           padding: '5px'
-        }}>ARTmood <a href="https://github.com/N7Layla/artmood"><span aria-label="Code" className="th th-code" style={{fontSize: '20px'}}></span></a> <a href="https://art-mood.herokuapp.com/"><span aria-label="View" className="th th-open" style={{fontSize: '18px'}}></span></a></h3> 
+        }}>ARTmood <a aria-label="code" href="https://github.com/N7Layla/artmood"><i className="fas fa-code"></i></a> <a aria-label="visit" href="https://art-mood.herokuapp.com/"><i className="fas fa-external-link-alt"></i></a></h3> 
         <div style={{
-          background: '#9278a9',
+          background: '#d3cce3', 
+          background: '-webkit-linear-gradient(to left, #d3cce3, #e9e4f0)',  
+          background: 'linear-gradient(to left, #d3cce3, #e9e4f0)', 
           padding: '5px'
         }}>
           a react webapp that provides art by mood, using harvard art museums' api. 
@@ -37,9 +56,11 @@ class Projects extends React.Component {
           borderBottom: '2px solid #9278a9',
           marginBottom: '0',
           padding: '5px'
-        }}>twitch explorer <a href="https://github.com/N7Layla/twitch-explorer"><span aria-label="Code" style={{fontSize: '20px'}} className="th th-code"></span></a></h3>
+        }}>twitch explorer <a aria-label="code" href="https://github.com/N7Layla/twitch-explorer"><i className="fas fa-code"></i></a></h3>
                 <div style={{
-          background: '#9278a9',
+          background: '#d3cce3', 
+          background: '-webkit-linear-gradient(to left, #d3cce3, #e9e4f0)',  
+          background: 'linear-gradient(to left, #d3cce3, #e9e4f0)', 
           padding: '5px'
         }}>
         a vue webapp pulling overwatch stream data from the twitch api. 

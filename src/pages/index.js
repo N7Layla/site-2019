@@ -18,11 +18,7 @@ class BlogIndex extends React.Component {
           title="home"
           keywords={[`blog`, `developer`, `personal site`]}
         />
-         {/* <Bio />  */}
-        {posts.slice(0,2).map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug} style={{
+            <div style={{
               padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
               margin: `${rhythm(2 /4)}`,
             }}>
@@ -35,29 +31,26 @@ class BlogIndex extends React.Component {
                   padding: '5px',
                 }}
               >
-                <Link style={{ 
-                  boxShadow: `none`, 
-                  //borderBottom: '2px solid #9278a9',
-                  marginBottom: '0',
-                  padding: '5px'
-                   }} to={node.fields.slug}>
-                  {title}
-                </Link>
+              Welcome! Recently I am...
               </h3>
               <div style={{
-          background: '#9278a9',
-          padding: '5px'
+          background: '#d3cce3', 
+          background: '-webkit-linear-gradient(to left, #d3cce3, #e9e4f0)',  
+          background: 'linear-gradient(to left, #d3cce3, #e9e4f0)', 
+          padding: '5px',
+          width: '100%'
         }}>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
+        <ul className="fa-ul">
+          <li><span className="fa-li"><i className="fas fa-paragraph fa-xs"></i></span>Writing: <Link to={posts[0].node.fields.slug}>{posts[0].node.frontmatter.title || posts[0].node.frontmatter.slug}</Link></li>
+          <li><span className="fa-li"><i className="fas fa-book-open fa-xs"></i></span>Reading: <i>Strapless</i> by Deborah Davis</li>
+          <li><span className="fa-li"><i className="fas fa-gamepad fa-xs"></i></span>Playing: Stardew Valley</li>
+          <li><span className="fa-li"><i className="fas fa-music fa-xs"></i></span>Listening: chloe mk</li>
+          <li><span className="fa-li"><i className="fas fa-tv fa-xs"></i></span>Watching: Critical Role, always.</li>
+        </ul>
+            
+                              
               </div>
-            </div>
-          )
-        })} 
+            </div> 
       </Layout>
     )
   }
