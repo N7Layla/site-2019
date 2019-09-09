@@ -14,7 +14,7 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="about" />
-        <p style={{
+        <div style={{
           textAlign: 'justify',
             padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
             margin: `${rhythm(2 /4)}`,
@@ -26,13 +26,13 @@ class About extends React.Component {
                 float: 'left',
                 margin: '10px'
               }}
-            />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. Degree in Art History plus experience in historic preservation and customer service under her belt, she finally made the plunge into professional development by means of the <a href="https://www.gracehopper.com/">Grace Hopper</a> program in Software Engineering. Since graduating the intensive program in 2018, she has worked as part of a global development team for <a href="https://kuv.io/">Kuvio Creative</a>. She is passionate about ongoing learning and accessibility.</p>
+            />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. Degree in Art History plus experience in historic preservation and customer service under her belt, she finally made the plunge into professional development by means of the <a href="https://www.gracehopper.com/">Grace Hopper</a> program in Software Engineering. Since graduating the intensive program in 2018, she has worked as part of a global development team for <a href="https://kuv.io/">Kuvio Creative</a>. She is passionate about ongoing learning and accessibility.</div>
 
-        <p style={{
+        <div style={{
           textAlign: 'justify',
             padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
             margin: `${rhythm(2 /4)}`,
-        }}>  When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</p>
+        }}>  When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</div>
 
   
       <div style={{
@@ -74,10 +74,5 @@ export const aboutQuery = graphql`
     }
   }
 `
-// export const imgQuery = graphql`
-// query {
-
-// }
-// `
 
 

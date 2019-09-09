@@ -1,6 +1,5 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
-import rainbow from "../../content/assets/rainbow.png"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
@@ -10,38 +9,15 @@ Wordpress2016.overrideThemeStyles = () => {
     "body": {
       fontFamily: `'Roboto', serif`,
       letterSpacing: '1px',
-      //backgroundColor: '#eadbf6',
-      // background: '#654ea3;',
-      // background: '-webkit-linear-gradient(to left, #dae2f8, #d6a4a4)',
-      // background: 'linear-gradient(to left, #dae2f8, #d6a4a4)',
-      // backgroundSize: 'cover',
       width: '100%',
     },
     ".content": {
       maxWidth: '100vw',
     },
     "main": {
-      //marginTop: '1rem',
       width: '100%',
     },
-    "header a": {
-      //backgroundPosition: 'center center',
-      webkitTransition: '1s ease-in-out',
-      transition: '1s ease-in-out',
-    },
-    "header a:hover": {
-      // backgroundColor: 'transparent',
-      // backgroundImage: 'url(' + rainbow + ')',
-      // backgroundSize: 'cover',
-      // backgroundRepeat: 'no-repeat',
-      // backgroundPosition: 'bottom center',
-      // backgroundOpacity: 0.3,
-      webkitTransition: '1s ease-in-out',
-      transition: '1s ease-in-out',
-      letterSpacing: '1rem',
-    },
     "h1, h2, h3, h4, h5, h6": {
-      //marginTop: '2rem',
       marginTop: '0',
     },
     "a.gatsby-resp-image-link": {
@@ -50,6 +26,15 @@ Wordpress2016.overrideThemeStyles = () => {
     "a": {
       boxShadow: 'none',
       color: '#000000'
+    },
+    "header a": {
+      webkitTransition: '1s ease-in-out',
+      transition: '1s ease-in-out',
+    },
+    "header a:hover": {
+      webkitTransition: '1s ease-in',
+      transition: '1s ease-in',
+      background: '#d3cce3',
     },
     ".th": {
       backgroundColor: 'white', 

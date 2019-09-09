@@ -26,7 +26,6 @@ class Blog extends React.Component {
             }}>
               <h3
                 style={{
-                  //marginBottom: rhythm(1 / 4),
                   marginTop: '0',
                   marginBottom: '0',
                   borderBottom: '2px solid #9278a9',
@@ -35,7 +34,6 @@ class Blog extends React.Component {
               >
                 <Link style={{ 
                   boxShadow: `none`, 
-                  //borderBottom: '2px solid #9278a9',
                   marginBottom: '0',
                   padding: '5px'
                    }} to={node.fields.slug}>

@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Bio from "../components/bio"
 
-import Header from './header';
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -25,33 +24,11 @@ class Layout extends React.Component {
         <div style={{
           width: '100%',
           margin: '0px',
-          //padding: `${rhythm(3 /4)} ${rhythm(3 / 4)}`,
-
-          //paddingBottom: rhythm(1 /4),
         }}>
-          {/* <div style={{
-            height: '300px',
-            width: '100%',
-            backgroundImage: 'url("desk_commission.gif")',
-            backgroundPosition: 'center center',
-            backgroundSize: 'cover'
-          }}
-        ></div> */}
                 <h4
                 style={{
                   fontFamily: `'Staatliches', serif`,
-                  //display: 'flex',
-                  //flexWrap: 'wrap',
-                  //alignItems: 'center',
-                  //marginTop: '1rem',
                   width: '100%',
-                  //display: 'flex',
-                  //alignItems: 'center',
-                  //textAlign: 'center',
-                  //marginTop: rhythm(1 / 4),
-                  //background: '#654ea3',  /* fallback for old browsers */
-                  //background: '-webkit-linear-gradient(to left, #eaafc8, #654ea3)',
-                  //background: 'linear-gradient(to left, #eaafc8, #654ea3)'
 
                 }}>
           
@@ -63,13 +40,12 @@ class Layout extends React.Component {
               position: 'fixed',
               top: '0',
               width: '100%',
-              //height: rhythm(1.5),
               background: '#ffffff',
           }}>
           <Link
                 style={{
                   textDecoration: 'none', 
-                  color: '#000000',
+                  //color: '#000000',
                   textTransform: 'uppercase',
                   padding: '8px',
                   width: '25%',
@@ -131,15 +107,7 @@ class Layout extends React.Component {
               </div>
       );
     return (
-      <div
-        style={{
-          //marginLeft: `auto`,
-          //marginRight: `auto`,
-          //maxWidth: rhythm(25),
-          //padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          //padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <div>
     <Helmet>
     <script src="https://kit.fontawesome.com/7ada84c29d.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto|Srisakdi|Staatliches" rel="stylesheet"></link>
@@ -153,32 +121,18 @@ class Layout extends React.Component {
         }}>
         <div className="content" style={{
           display: 'flex',
-          //maxWidth: '200vw',
           maxWidth: rhythm(50),
-          //flexWrap: 'wrap-reverse'
           padding: '0',
         }}>
         <div style={{
-            //height: '300px',
-            //width: '500px',
-            //backgroundImage: 'url("desk_commission.gif")',
-            //backgroundPosition: 'center center',
-            //backgroundSize: 'cover'
             padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
           }}
         >
          <Bio /> 
         </div>
-        <main style={{
-          //padding: `${rhythm(3 /4)} ${rhythm(3 / 4)}`,
-          //width: '50%'
-        }}>{children}</main>
+        <main>{children}</main>
         </div>
         </div>
-        {/* <hr style={{
-          width: '40%',
-          borderTop: '1px solid #9278a9'
-        }} /> */}
         {/* <footer style={{
           fontSize: '12px'
         }}>

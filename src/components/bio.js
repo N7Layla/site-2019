@@ -19,10 +19,9 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author } = data.site.siteMetadata
         return (
           <div style={{
-            //minWidth: '430px'
             width: '100%'
           }}>
            
@@ -33,7 +32,6 @@ function Bio() {
               paddingBottom: '10px',
               flexDirection: 'column',
               width: '100%',
-              //marginBottom: rhythm(2.5),
             }}
           >
           <Link to={'/'}><img src={bannerGIF} alt="<laylawrote/>" /></Link>
@@ -59,9 +57,6 @@ function Bio() {
              textAlign: 'center'
             }}>
               Developer & pop culture enthusiast. 
-              {/* <a href="https://twitter.com/laylawrote"><span aria-label="Twitter" className="th th-twitter-o" style={{
-                fontSize: '13px'
-              }}></span></a> */}
             </div>
             <div style={{
         display: 'flex',
