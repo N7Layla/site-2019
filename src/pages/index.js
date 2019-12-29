@@ -40,10 +40,10 @@ class BlogIndex extends React.Component {
         }}>
         <ul className="fa-ul">
           <li><span className="fa-li"><i className="fas fa-paragraph fa-xs"></i></span>Writing: <Link to={posts[0].node.fields.slug}>{posts[0].node.frontmatter.title || posts[0].node.frontmatter.slug}</Link></li>
-          <li><span className="fa-li"><i className="fas fa-book-open fa-xs"></i></span>Reading: <i>Strapless</i> by Deborah Davis</li>
-          <li><span className="fa-li"><i className="fas fa-gamepad fa-xs"></i></span>Playing: Stardew Valley</li>
-          <li><span className="fa-li"><i className="fas fa-music fa-xs"></i></span>Listening: chloe mk</li>
-          <li><span className="fa-li"><i className="fas fa-tv fa-xs"></i></span>Watching: Critical Role, always.</li>
+          <li><span className="fa-li"><i className="fas fa-book-open fa-xs"></i></span>Reading: <a href="https://www.goodreads.com/review/list/10094110?shelf=currently-reading">Check Bookshelf</a></li>
+          <li><span className="fa-li"><i className="fas fa-gamepad fa-xs"></i></span>Playing: The Witcher 3 (again)</li>
+          <li><span className="fa-li"><i className="fas fa-music fa-xs"></i></span>Listening: HANA</li>
+          <li><span className="fa-li"><i className="fas fa-tv fa-xs"></i></span>Watching: The Clone Wars</li>
         </ul>
             
                               

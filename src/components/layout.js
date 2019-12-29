@@ -24,6 +24,8 @@ class Layout extends React.Component {
         <div style={{
           width: '100%',
           margin: '0px',
+          background: '#ffffff',
+          zIndex: 100,
         }}>
                 <h4
                 style={{
