@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
           title="home"
           keywords={[`blog`, `developer`, `personal site`]}
         />
-            <div style={{
+            {/* <div style={{
               padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
               margin: `${rhythm(2 /4)}`,
             }}>
@@ -48,7 +48,7 @@ class BlogIndex extends React.Component {
             
                               
               </div>
-            </div> 
+            </div>  */}
       </Layout>
     )
   }

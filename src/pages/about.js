@@ -16,26 +16,31 @@ class About extends React.Component {
         <SEO title="about" />
         <div style={{
           textAlign: 'justify',
+          maxWidth: rhythm(50),
             padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
-            margin: `${rhythm(2 /4)}`,
-        }}>            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt="Portrait"
-              style={{
-                minWidth: 100,
-                float: 'left',
-                margin: '10px'
-              }}
-            />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. Degree in Art History plus experience in historic preservation and customer service under her belt, she finally made the plunge into professional development by means of the <a href="https://www.gracehopper.com/">Grace Hopper</a> program in Software Engineering. Since graduating the intensive program in 2018, she has worked as part of a global development team for <a href="https://kuv.io/">Kuvio Creative</a>. She is passionate about ongoing learning and accessibility.</div>
+            margin: 'auto',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column'
+        }}>            <div><Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt="Portrait"
+        style={{
+          minWidth: 100,
+          float: 'left',
+          margin: '10px'
+        }}
+      />Layla has been writing code since she was a teenager making fansites for her favorite shows and characters. With a background in art history and historic preservation, she finally made the plunge into professional development by means of the <a href="https://www.gracehopper.com/">Grace Hopper</a> program in Software Engineering. Since graduating the intensive course, she has worked as part of a global development team for <a href="https://kuv.io/">Kuvio Creative</a>. She is passionate about ongoing learning and accessibility.</div>
+            <div>When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</div></div>
 
-        <div style={{
+        {/* <div style={{
           textAlign: 'justify',
             padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
             margin: `${rhythm(2 /4)}`,
-        }}>  When not juggling tabs in Visual Studio, Layla can be found reading on the beach, trying dance workouts or rethinking decisions in an RPG. She is currently working on several personal projects in her free time ranging from coding projects to original fiction writing. Formative favorites include Buffy the Vampire Slayer, Mass Effect and Nancy Drew.</div>
+        }}>  </div> */}
 
   
-      <div style={{
+      {/* <div style={{
         display: 'flex',
         justifyContent: 'center',
         width: '100%'
@@ -50,7 +55,7 @@ class About extends React.Component {
                 backgroundColor: '#9278a9',
                 color: 'white'
               }}></span></a></div>
-              <div><a href="https://ko-fi.com/laylawrote"><span aria-label="Ko-Fi" className="th th-ko-fi"></span></a></div></div>
+              <div><a href="https://ko-fi.com/laylawrote"><span aria-label="Ko-Fi" className="th th-ko-fi"></span></a></div></div> */}
       </Layout>
     )
   }

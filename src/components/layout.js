@@ -20,94 +20,7 @@ class Layout extends React.Component {
     
 
     //if (location.pathname === rootPath) {
-      header = (
-        <div style={{
-          width: '100%',
-          margin: '0px',
-          background: '#ffffff',
-          zIndex: 100,
-        }}>
-                <h4
-                style={{
-                  fontFamily: `'Staatliches', serif`,
-                  width: '100%',
-
-                }}>
-          
-          <div style={{
-              display: 'flex',
-              justifyContent: 'space-around',
-              alignItems: 'center',
-              borderBottom: '1px solid #b79ed9',
-              position: 'fixed',
-              top: '0',
-              width: '100%',
-              background: '#ffffff',
-          }}>
-          <Link
-                style={{
-                  textDecoration: 'none', 
-                  //color: '#000000',
-                  textTransform: 'uppercase',
-                  padding: '8px',
-                  width: '25%',
-                  textAlign: 'center'
-                }}
-                activeStyle={{
-                  borderBottom: '2px solid #9278a9',
-                }}
-                to={'/blog'}>
-                Blog
-                </Link> 
-                <Link
-                style={{
-                  textDecoration: 'none', 
-                  color: '#000000',
-                  textTransform: 'uppercase',
-                  padding: '8px',
-                  width: '25%',
-                  textAlign: 'center'
-                }}
-                activeStyle={{
-                  borderBottom: '2px solid #9278a9'
-                }}
-                to={'/about'}>
-                About
-                </Link>    
-                <Link
-                style={{
-                  textDecoration: 'none', 
-                  color: '#000000',
-                  textTransform: 'uppercase',
-                  padding: '8px',
-                  width: '25%',
-                  textAlign: 'center'
-                }}
-                activeStyle={{
-                  borderBottom: '2px solid #9278a9'
-                }}
-                to={'/projects'}>
-                Projects
-                </Link>
-                <Link
-                style={{
-                  textDecoration: 'none', 
-                  color: '#000000',
-                  textTransform: 'uppercase',
-                  padding: '8px',
-                  width: '25%',
-                  textAlign: 'center'
-                }}
-                activeStyle={{
-                  borderBottom: '2px solid #9278a9'
-                }}
-                to={'/contact'}>
-               Contact
-                </Link>
-                </div>
-              </h4>
-              </div>
-      );
+      header = ("");
     return (
       <div>
     <Helmet>
@@ -119,11 +32,13 @@ class Layout extends React.Component {
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
+          flexDirection: 'column',
           marginTop: rhythm(2),
         }}>
         <div className="content" style={{
           display: 'flex',
-          maxWidth: rhythm(50),
+          //maxWidth: rhythm(50),
+          flexDirection: 'column',
           padding: '0',
         }}>
         <div style={{

@@ -14,8 +14,12 @@ class Contact extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="contact" />
         <div style={{
+            maxWidth: rhythm(50),
             padding: `${rhythm(2 /4)} ${rhythm(2 / 4)}`,
-            margin: `${rhythm(2 /4)}`,
+            margin: 'auto',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column'
         }}>
         <p>Wanna get in touch?</p>
 

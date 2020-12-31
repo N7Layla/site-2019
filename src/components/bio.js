@@ -34,7 +34,7 @@ function Bio() {
               width: '100%',
             }}
           >
-          <Link to={'/'}><img src={bannerGIF} alt="<laylawrote/>" /></Link>
+          <Link to={'/'}><Image src={bannerGIF} alt="<laylawrote/>" /></Link>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -56,7 +56,7 @@ function Bio() {
              fontWeight: 'bold',
              textAlign: 'center'
             }}>
-              Developer & pop culture enthusiast. 
+              Hello! I am a <Link to={'/about'}><u>developer</u></Link> & pop culture enthusiast.
             </div>
             <div style={{
         display: 'flex',
@@ -65,9 +65,10 @@ function Bio() {
       }}>
       <a aria-label="twitter" href="https://twitter.com/laylawrote"><i className="fab fa-twitter fa-fw"></i></a>
       <a aria-label="github" href="https://github.com/N7Layla"><i className="fab fa-github fa-fw"></i></a> 
-      <a aria-label="goodreads" href="https://www.goodreads.com/user/show/10094110-layla"><i className="fab fa-goodreads fa-fw"></i></a> 
+      <a aria-label="reading" href="https://beta.thestorygraph.com/profile/3ef01d74-50b7-4045-b8ff-3c9d915b5df6"><i className="fas fa-book fa-fw"></i></a> 
               <a aria-label="letterbod" href="https://letterboxd.com/vod/"><i className="fas fa-film fa-fw"></i></a>
-              <a aria-label="ko-fi" href="https://ko-fi.com/laylawrote"><i className="fas fa-coffee fa-fw"></i></a></div>
+              <a aria-label="ko-fi" href="https://ko-fi.com/laylawrote"><i className="fas fa-coffee fa-fw"></i></a>
+              <a aria-label="contact" href="/contact"><i className="fas fa-envelope fa-fw"></i></a></div>
           </div>
           </div>
         )
